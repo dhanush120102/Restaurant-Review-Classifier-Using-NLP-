@@ -2,13 +2,12 @@
 <html>
   <head>
     <title>Home</title>
-    <!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
-    <link
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="{{ url_for('static', filename='css/styles.css') }}"
-    />
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    /> -->
 
     <!-- Font-style-link  -->
     <link
@@ -23,7 +22,6 @@
       </header>
 
       <div class="flex-center-col row-flex opa-1">
-        <!-- <img src="https://source.unsplash.com/800x450/?restaurant" alt="restaurant-photo"> -->
         <form action="{{ url_for('predict')}}" method="POST" class="flex-center-col">
           <!-- <div class="form-input">Enter Your Review Here</div> -->
           <!-- <input type="text" name="comment"/> -->
