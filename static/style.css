@@ -1,51 +1,92 @@
-body{
-	font:15px/1.5 Arial, Helvetica,sans-serif;
-	padding: 0px;
-	background-color:#f4f3f3;
+.flex-center-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.container{
-	width:100%;
-	margin: auto;
-	overflow: hidden;
+.row-flex {
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-header{
-	background:#03A9F4;#35434a;
-	border-bottom:#448AFF 3px solid;
-	height:120px;
-	width:100%;
-	padding-top:30px;
-
+.custom-background {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://source.unsplash.com/1920x1080/?restaurant);
+    background-position: center;
+    /* filter: brightness(0.5); */
 }
 
-.main-header{
-			text-align:center;
-			background-color: blue;
-			height:100px;
-			width:100%;
-			margin:0px;
-		}
-#brandname{
-	float:left;
-	font-size:30px;
-	color: #fff;
-	margin: 10px;
+body {
+    padding: 0;
+    margin: 0;
+	font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: whitesmoke;
+    box-sizing: border-box;
+    overflow-x: hidden;    
+    overflow-y: hidden;    
+    width: 100vw;
+    min-height: 100vh;
 }
 
-header h2{
-	text-align:center;
-	color:#fff;
-
+.blur-content {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(rgba(0,0,0,0.4) 40%, rgba(0,0,0,0) 60%);
+    padding: 30px;
 }
 
+header {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
 
+#desc-brand {
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 25px;
+    padding: 10px 25px;
+}
 
-.btn-info {background-color: #2196F3;
-	height:40px;
-	width:100px;} /* Blue */
-.btn-info:hover {background: #0b7dda;}
+form {
+    padding: 20px;
+}
 
+.form-input {
+    font-size: 1.25rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+textarea {
+    border: 0;
+    color: white;
+    font-size: 1.05rem;
+    background-color: rgba(44, 44, 44, 0.8);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.btn-info {
+    margin-top: 25px;
+    background: linear-gradient(45deg, #1beecb, #169ba8);
+	padding: 10px 30px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 1.025rem;
+    /* color: whitesmoke; */
+    letter-spacing: 2px;
+}
+
+.btn-info:hover {
+    background: transparent;
+    color: white;
+}
 
 .resultss{
 	border-radius: 15px 50px;
